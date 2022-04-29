@@ -13,9 +13,11 @@
     >
       <form
         id="sign-in-form"
-        class="flex w-full max-w-sm flex-col justify-center gap-10 rounded-lg bg-white py-6 px-10"
+        class="flex w-full max-w-sm flex-col items-start justify-center gap-10 rounded-lg bg-white py-12 px-8"
       >
-        <h1 id="sign-in-form-title" class="text-center text-5xl">登入</h1>
+        <h1 id="sign-in-form-title" class="w-full text-center text-5xl">
+          登入
+        </h1>
         <div id="sign-in-input" class="flex w-full flex-col items-center gap-5">
           <label for="account" class="relative w-full py-1">
             <input
@@ -25,7 +27,7 @@
             />
             <p
               id="addr-hint-text"
-              class="peer-focus-text-xs absolute top-2 left-0 w-24 cursor-text select-none duration-200 peer-focus:translate-y-5 peer-focus:text-sky-500"
+              class="peer-focus:text-x absolute top-2 left-0 w-24 cursor-text select-none duration-200 peer-focus:-translate-y-5 peer-focus:text-sky-500"
             >
               帳號
             </p>
@@ -38,7 +40,7 @@
             />
             <p
               id="password-hint-text"
-              class="peer-focus-text-xs absolute top-2 left-0 w-24 cursor-text select-none duration-200 peer-focus:translate-y-5 peer-focus:text-sky-500"
+              class="peer-focus-text-xs absolute top-2 left-0 w-24 cursor-text select-none duration-200 peer-focus:-translate-y-5 peer-focus:text-sky-500"
             >
               密碼
             </p>
@@ -53,7 +55,8 @@
           </div>
           <button
             id="submit-button"
-            class="bg-sky-500 py-2 text-white active:translate-y-1 active:translate-x-1"
+            type="submit"
+            class="w-full rounded-lg bg-sky-500 py-2 text-center text-lg text-white active:translate-y-1 active:translate-x-1"
           >
             登入
           </button>
